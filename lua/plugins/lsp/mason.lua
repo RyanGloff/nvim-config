@@ -21,15 +21,14 @@ return {
     mason_lspconfig.setup({
       ensure_installed = {
         'tsserver',
+<<<<<<< HEAD
         'html',
         'cssls',
         'svelte',
+=======
+>>>>>>> d7d8454 (config from work laptop)
         'lua_ls',
-        'graphql',
-        'emmet_ls',
-        'prismals',
-        'pyright',
-        'jdtls',
+        'jdtls'
       },
       automatic_installation = true
     })

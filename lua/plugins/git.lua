@@ -7,5 +7,6 @@ return {
     vim.keymap.set('n', '<leader>gt', ':Gitsigns toggle_current_line_blame<CR>', {})
     vim.keymap.set('n', '<leader>gs', ':Gitsigns stage_hunk<CR>', {})
     vim.keymap.set('n', '<leader>gr', ':Gitsigns reset_hunk<CR>', {})
+    vim.keymap.set('n', '<leader>gn', ':Gitsigns next_hunk<CR>', {})
   end
 }

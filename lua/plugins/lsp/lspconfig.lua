@@ -64,14 +64,11 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
     end
 
-    lspconfig['html'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
     lspconfig['tsserver'].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
+<<<<<<< HEAD
     lspconfig['cssls'].setup({
       capabilities = capabilities,
       on_attach = on_attach,
@@ -85,6 +82,8 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
+=======
+>>>>>>> d7d8454 (config from work laptop)
     lspconfig['lua_ls'].setup({
       capabilities = capabilities,
       on_attach = on_attach,
