@@ -78,12 +78,15 @@ return {
       on_attach = on_attach,
       filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'svelte' },
     })
+<<<<<<< HEAD
     lspconfig['pyright'].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 =======
 >>>>>>> d7d8454 (config from work laptop)
+=======
+>>>>>>> f1c5a3c (Added stuff from work laptop)
     lspconfig['lua_ls'].setup({
       capabilities = capabilities,
       on_attach = on_attach,

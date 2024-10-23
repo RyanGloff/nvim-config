@@ -24,9 +24,12 @@ return {
 <<<<<<< HEAD
         'html',
         'cssls',
+<<<<<<< HEAD
         'svelte',
 =======
 >>>>>>> d7d8454 (config from work laptop)
+=======
+>>>>>>> f1c5a3c (Added stuff from work laptop)
         'lua_ls',
         'jdtls'
       },
