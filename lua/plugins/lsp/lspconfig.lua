@@ -64,39 +64,5 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
     end
 
-    lspconfig['tsserver'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-    lspconfig['cssls'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-    lspconfig['emmet_ls'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'svelte' },
-    })
-    lspconfig['lua_ls'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = {
-        Lua = {
-          diagnostics = {
-            globals = { 'vim' },
-          },
-          workspace = {
-            library = {
-              [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-              [vim.fn.stdpath('config') .. '/lua'] = true,
-            }
-          }
-        }
-      }
-    })
-    lspconfig['jdtls'].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
   end
 }

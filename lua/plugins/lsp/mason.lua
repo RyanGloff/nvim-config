@@ -19,13 +19,7 @@ return {
     })
 
     mason_lspconfig.setup({
-      ensure_installed = {
-        'tsserver',
-        'html',
-        'cssls',
-        'lua_ls',
-        'jdtls'
-      },
+      ensure_installed = {},
       automatic_installation = true
     })
   end
